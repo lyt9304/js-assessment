@@ -11,5 +11,20 @@ exports.flowControlAnswers = {
     // otherwise the function should return the number, or false if no number
     // was provided or the value provided is not a number
 
+    var res="";
+    if(typeof num == "number"){
+        if(num % 3==0){
+            res+="fizz";
+        }
+        if(num % 5==0){
+            res+="buzz";
+        }
+        if(!res){
+            res=num;
+        }
+    }else{
+        return false;
+    }
+    return res;
   }
 };
